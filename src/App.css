@@ -1,7 +1,4 @@
-.App {
-  text-align: center;
-  color: #FFFFFF
-}
+
 
 .FacePic{
   border-radius: 75px;
@@ -12,6 +9,13 @@
 .seattle{
   background-image: url('./seattle.jpg');
   height: 700px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.machining{
+  max-height: 400px;
+  max-width: 425px;
 }
 
 h1{

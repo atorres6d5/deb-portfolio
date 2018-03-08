@@ -2,7 +2,7 @@ import React from 'react';
 import Avatar from 'material-ui/Avatar';
 
 
-const Heading = ({name, title, image}) => (
+const Heading = ({ title, image}) => (
   <div>
     <h1>{title}</h1>
     <Avatar
