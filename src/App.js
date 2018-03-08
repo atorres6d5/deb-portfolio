@@ -4,10 +4,11 @@ import Heading from './components/heading.js'
 import Machining from './components/about.js'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import { deepPurple800, deepPurple50
+import { deepPurple800, deepPurple50, grey50
 , blue500, grey800 } from 'material-ui/styles/colors'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Projects from './components/projects.js'
+import Developer from './components/developer.js'
 
 class App extends Component {
   constructor(props){
@@ -21,7 +22,8 @@ class App extends Component {
 
   muiTheme = getMuiTheme({
       palette: {
-        textColor: blue500,
+        textColor: grey50
+,
       },
       appBar: {
         height: 75,
@@ -43,13 +45,14 @@ class App extends Component {
           title={this.state.title}
           image={this.state.photo}/>
       </div>
-      <div>
-
-        <Machining
-          name={this.state.name} />
+      <div className="container dev">
+        <Developer />
       </div>
-      <div>
-        <Projects />
+      <div className="container machinist">
+        <Machining
+          name={this.state.name}
+          className="row justify-content-center"
+         />
       </div>
 
     </MuiThemeProvider>

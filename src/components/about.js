@@ -1,33 +1,36 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import { deepPurple800 } from 'material-ui/styles/colors'
-
+import { deepPurple800, indigo200 } from 'material-ui/styles/colors'
+import Avatar from 'material-ui/Avatar';
 
 const Machining = () => (
-    <Card>
-      <CardHeader
-        title="About Me"
-        subtitle="Web Development"
-        style={{"backgroundColor": deepPurple800 }}
-      />
+    <Card style={{
+      "backgroundColor":indigo200
+    }}>
       <CardMedia
-        overlay={<CardTitle title="Machinist" subtitle="Worked part time as a Machinist while going to school at Galvanize" />}
+        overlay={<CardTitle title="CNC Machinist" subtitle="Worked part time as a Machinist while going to school at Galvanize" />}
+        style={{"backgroundColor": indigo200}}
       >
         <div>
-          <img src="./img/load.jpg" alt=""  className="machining"/>
-          <img src="./img/Machine.jpg" alt="" className="machining" />
-          <img src="./img/block.jpg" alt="" className="machining" />
+          <Avatar src="./img/load.jpg" size={370} style={{
+            "border-radius":"20%"
+          }}/>
+          <Avatar src="./img/Machine.jpg" size={370} style={{
+            "border-radius":"10%"
+          }} />
+          <Avatar src="./img/block.jpg" size={370} style={{
+            "border-radius":"20%"
+          }} />
         </div>
       </CardMedia>
-      <CardTitle title="CNC Machining" subtitle="Certified Everett Community College" />
-      <CardText>
-        Learned how to machine at Everett Community College and have 6+ years exp. in the workplace as a Machinist. Worked on mostly Aluminium. Also worked with Titanium, Inconel, Copper, Stainless Steal, and even some plastics. Aerospace Industry ITAR worker
+      <CardTitle title="CNC Machining" subtitle="Certified Everett Community College" style={{"backgroundColor":deepPurple800}}/>
+      <CardText style={{
+        "backgroundColor":indigo200,
+        "width":"33%"
+      }}>
+        Learned how to machine at Everett Community College, and have 6+ years experience in the workplace as a Machinist. Worked on mostly Aluminium. Also worked with Titanium, Inconel, Copper, Stainless Steal, and even some plastics. Can work on Haas, Mori, and Funuk controls. Experience making ITAR parts. I have a few basic tools to bring to the job.
       </CardText>
-      <CardActions>
-        <FlatButton label="Action1" />
-        <FlatButton label="Action2" />
-      </CardActions>
     </Card>
 );
 

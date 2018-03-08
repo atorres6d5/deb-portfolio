@@ -1,0 +1,22 @@
+body{
+  background-image: url("./img/wallpaper.jpg");
+  background-position: cover;
+  background-attachment: fixed
+}
+
+.dev{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.dev_pic{
+  max-height: 695px;
+}
+
+.machinist{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+i{
+  color: white;
+}
