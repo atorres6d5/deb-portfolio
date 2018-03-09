@@ -11,7 +11,6 @@ const Machining = () => (
     <CardTitle title="CNC Machining" subtitle="Certified Everett Community College" style={{"backgroundColor":deepPurple800}}/>
     <CardText style={{
       "backgroundColor":indigo200,
-      "width":"33%"
     }}>
     Learned how to machine at Everett Community College, and have 6+ years experience in the workplace as a Machinist. Worked on mostly Aluminum. Also worked with Titanium, Inconel, Copper, Stainless Steal, and even some plastics. Can work on Haas, Mori, and Funuk controls. Experience making ITAR parts. I have a few basic tools to bring to the job.
     </CardText>
@@ -20,14 +19,14 @@ const Machining = () => (
         style={{"backgroundColor": indigo200}}
       >
         <div>
-          <Avatar src="./img/load.jpg" size={370} style={{
-            "border-radius":"20%"
+          <Avatar src="./img/load.jpg"  size={`${1/3*100}%`} style={{
+            "border-radius":"0%"
           }}/>
-          <Avatar src="./img/Machine.jpg" size={370} style={{
-            "border-radius":"10%"
+          <Avatar src="./img/Machine.jpg" size={`${1/3*100}%`} style={{
+            "border-radius":"0%"
           }} />
-          <Avatar src="./img/block.jpg" size={370} style={{
-            "border-radius":"20%"
+          <Avatar src="./img/block.jpg"  size={`${1/3*100}%`} style={{
+            "border-radius":"0%"
           }} />
         </div>
       </CardMedia>

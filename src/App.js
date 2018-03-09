@@ -54,7 +54,6 @@ class App extends Component {
           className="row justify-content-center"
          />
       </div>
-
     </MuiThemeProvider>
     );
   }

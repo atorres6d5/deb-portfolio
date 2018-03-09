@@ -64,7 +64,7 @@ const tilesData = [
 const Projects = () => (
   <div style={styles.root}>
     <GridList
-      cellHeight={650}
+      cellHeight={250}
       style={styles.gridList}
     >
       <Subheader
@@ -80,7 +80,7 @@ const Projects = () => (
           >
             <img src={tile.img} />
           </GridTile>
-        ))}
+        ))}<GridTile ><div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="aldo-torres"><a class="LI-simple-link" href='https://www.linkedin.com/in/aldo-torres?trk=profile-badge'>Aldo Torres</a></div></GridTile>
     </GridList>
   </div>
 );
