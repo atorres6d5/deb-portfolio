@@ -14,7 +14,7 @@ const Developer = ({}) => (
       "backgroundColor":indigo200
     }}>
       <CardMedia
-        overlay={<CardTitle title="Web Developer" subtitle="Galvanize student, Full Stack Web Developer. JavaScript, React, Node Express, and Postgress" />}
+        overlay={<CardTitle title="Web Developer" subtitle="Galvanize student, Full Stack Web Developer. JavaScript, React, Node Express, Postgress" />}
         style={{"backgroundColor": indigo200}}
       >
         <div>
@@ -22,8 +22,7 @@ const Developer = ({}) => (
             src="./img/Programmer-Developer-Wallpaper.jpg"/>
         </div>
       </CardMedia>
-
-      <CardTitle title="Galvanize" subtitle="Studied Full Stack Web Development" style={{"backgroundColor":deepPurple800}}/>
+      <CardTitle title="Galvanize" subtitle="6 month Full time class, in a blended learning enviroment. Studied Full Stack Web Development" style={{"backgroundColor":deepPurple800}}/>
       <Projects />
     </Card>
   </div>

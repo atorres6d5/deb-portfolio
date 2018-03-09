@@ -8,6 +8,13 @@ const Machining = () => (
     <Card style={{
       "backgroundColor":indigo200
     }}>
+    <CardTitle title="CNC Machining" subtitle="Certified Everett Community College" style={{"backgroundColor":deepPurple800}}/>
+    <CardText style={{
+      "backgroundColor":indigo200,
+      "width":"33%"
+    }}>
+    Learned how to machine at Everett Community College, and have 6+ years experience in the workplace as a Machinist. Worked on mostly Aluminum. Also worked with Titanium, Inconel, Copper, Stainless Steal, and even some plastics. Can work on Haas, Mori, and Funuk controls. Experience making ITAR parts. I have a few basic tools to bring to the job.
+    </CardText>
       <CardMedia
         overlay={<CardTitle title="CNC Machinist" subtitle="Worked part time as a Machinist while going to school at Galvanize" />}
         style={{"backgroundColor": indigo200}}
@@ -24,13 +31,6 @@ const Machining = () => (
           }} />
         </div>
       </CardMedia>
-      <CardTitle title="CNC Machining" subtitle="Certified Everett Community College" style={{"backgroundColor":deepPurple800}}/>
-      <CardText style={{
-        "backgroundColor":indigo200,
-        "width":"33%"
-      }}>
-        Learned how to machine at Everett Community College, and have 6+ years experience in the workplace as a Machinist. Worked on mostly Aluminium. Also worked with Titanium, Inconel, Copper, Stainless Steal, and even some plastics. Can work on Haas, Mori, and Funuk controls. Experience making ITAR parts. I have a few basic tools to bring to the job.
-      </CardText>
     </Card>
 );
 
