@@ -11,8 +11,8 @@ const styles = {
     justifyContent: 'space-around',
   },
   gridList: {
-    width: 950,
-    height: 600,
+    width: "40rem",
+    height: "40rem",
     overflowY: 'auto',
   },
 };
@@ -70,13 +70,13 @@ const Projects = () => (
       <Subheader
         style={{"backgroundColor": deepPurple400 }}
         >Projects made at Galvanize</Subheader>
-        {tilesData.map((tile, i) => (
+        {tilesData.map((tile) => (
           <GridTile
             style={{"font-size":'3em'}}
-            key={i}
+            key={tile.deployed_app}
             title={<a href={tile.deployed_app}>{tile.title}</a>}
             subtitle={<b>{tile.what}</b>}
-            actionIcon={<i className="fab fa-github"></i>}
+            actionIcon={<a href={tile.github_front}><i className="fab fa-github"></i></a>}
           >
             <img src={tile.img} />
           </GridTile>
